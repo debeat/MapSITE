@@ -1,0 +1,67 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_theme"
+    tools:context=".MainActivity" >
+    
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="396dp"
+    android:orientation="vertical" >
+
+     <EditText
+         android:id="@+id/text1"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="154dp"
+         android:layout_weight="1.5"
+         android:ems="10"
+         android:hint="Product name"
+         android:inputType="text"
+         android:textColorHint="@android:color/black"
+         android:textColor="@android:color/black"
+         android:background="@layout/textlines" />
+
+     <Button
+         android:id="@+id/Location"
+         android:layout_width="100dp"
+         android:layout_height="30dp"
+         android:layout_below="@+id/text1"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="81dp"
+         android:layout_weight="1"
+         android:background="@drawable/orange"
+         android:onClick="location"
+         android:text="Search"
+         android:textColor="@android:color/black" />
+
+     <TextView
+         android:id="@+id/textView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="30dp"
+         android:layout_weight="0.5"
+         android:text="Search."
+         android:textColor="@android:color/black"
+         android:textSize="20sp" />
+
+     <Button
+         android:id="@+id/speak"
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         android:layout_below="@+id/text1"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="14dp"
+         android:layout_weight="1"
+         android:background="@drawable/speak"
+         android:onClick="Speak"
+          />
+    
+</RelativeLayout>
+</ScrollView>

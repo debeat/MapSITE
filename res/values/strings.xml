@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="conflict">CONFLICT</string>
+
+    <color name="black">#00000000</color>
+
+    <string name="performance_text">0.00 seconds 0.00 xRT</string>
+    <string name="app_name">MapSITE</string>
+    <string name="details_text">Please enter your details!!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="edit_button_text">EDIT</string>
+    <string name="search_button_text">LOCATE</string>
+    <string name="addListing_button_text">ADD LISTING</string>
+    <string name="title_activity_collect_details">Collect_details</string>
+    <string name="hint1">Shop Name</string>
+    <string name="hint2">Phone No.</string>
+    <string name="hint3">Main Product</string>
+    <string name="hint4">Other Products</string>
+    <string name="lat">Latitude</string>
+    <string name="lng">Longitude</string>
+    <string name="title_activity_camera_">Camera_Activity</string>
+    <string name="camera_button">Snapshot</string>
+    <string name="submit_button">Submit</string>
+    <string name="new_text">how di</string>
+    <string name="location">Get Location</string>
+    <string name="title_activity_my_location">MyLocation</string>
+    <string name="add_listing_btn">Add Location</string>
+    <string name="str_btn_find">Find</string>
+
+    <string-array name="spinner_array">
+        <item>Business</item>
+        <item>Individual</item>
+    </string-array>
+
+    <string name="title_activity_add_location">AddLocation</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add_listing">Add_listing</string>
+    <string name="title_activity_street_vendor_main">StreetVendorMain</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_alert_box">AlertBox</string>
+    <string name="title_activity_alert">Alert</string>
+    <string name="partial">CHOICE 1</string>
+    <string name="final_">CHOICE 2</string>
+    <string name="title_activity_place_details">PlaceDetailsActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_business">Business</string>
+    <string name="title_activity_help">Help</string>
+    <string name="title_activity_google_webview">MainActivity</string>
+    <string name="title_activity_in_app_billing">InAppBillingActivity</string>
+
+</resources>

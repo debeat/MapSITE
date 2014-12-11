@@ -1,0 +1,95 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+   android:background="@drawable/android_theme"
+    tools:context=".Login" >
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="516dp"
+    android:orientation="vertical" >
+
+
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:background="@layout/textlines"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black" />
+
+    <TextView
+        android:id="@+id/login_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:layout_weight="0.5"
+        android:text="Business Account Login"
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/phone_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usernm"
+        android:layout_below="@+id/login_details"
+        android:layout_marginTop="87dp"
+        android:background="@layout/textlines"
+        android:ems="10"
+        android:hint="Phone number"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black" />
+
+    <EditText
+        android:id="@+id/usernm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pwd"
+        android:layout_below="@+id/phone_no"
+        android:layout_marginTop="23dp"
+        android:background="@layout/textlines"
+        android:ems="10"
+        android:hint="username"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black" />
+
+    <Button
+        android:id="@+id/button_sign_up"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pwd"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/orange"
+        android:onClick="signUp"
+        android:text="Sign Up"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/button_sign_in"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/button_sign_up"
+        android:layout_alignBottom="@+id/button_sign_up"
+        android:layout_toRightOf="@+id/login_details"
+        android:background="@drawable/green"
+        android:onClick="signIn"
+        android:text="Sign In"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
+</ScrollView>

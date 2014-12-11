@@ -1,0 +1,97 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+ android:background="@drawable/android_theme"
+    tools:context=".Login" >
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="510dp"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_alignBaseline="@+id/help_button"
+        android:layout_alignBottom="@+id/help_button"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/loginbutton"
+        android:visibility="gone" 
+        android:onClick="login"
+        android:textColor="#000000" />
+    <!-- REMOVE  android:visibility="gone" in the login_button --> 
+    
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_alignBaseline="@+id/help_button"
+        android:layout_alignBottom="@+id/help_button"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/logoutbutton"
+        android:onClick="logout"
+        android:visibility="gone"
+        android:textColor="#000000" />
+
+  <com.google.android.gms.common.SignInButton
+      android:id="@+id/btn_sign_in"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/help_button"
+      android:layout_below="@+id/help_button"
+      
+      android:layout_marginTop="64dp" >
+  </com.google.android.gms.common.SignInButton>
+
+  <Button
+      android:id="@+id/newvendor_button"
+      android:layout_width="200dp"
+      android:layout_height="30dp"
+      android:layout_below="@+id/help_button"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="306dp"
+      android:layout_weight="1"
+      android:background="@drawable/orange"
+      android:onClick="newVendor"
+      android:text="New Business Listing"
+      android:textColor="#000000" />
+
+  <Button
+      android:id="@+id/nearbysearch_button"
+      android:layout_width="200dp"
+      android:layout_height="30dp"
+      android:layout_alignLeft="@+id/newvendor_button"
+      android:layout_below="@+id/newvendor_button"
+      android:layout_marginTop="24dp"
+      android:layout_weight="1"
+      android:background="@drawable/orange"
+      android:onClick="search"
+      android:text="Search"
+      android:textColor="#000000" />
+
+  <Button
+      android:id="@+id/btn_sign_out"
+      android:layout_width="130dp"
+      android:layout_height="100dp"
+      android:layout_alignLeft="@+id/help_button"
+      android:layout_below="@+id/help_button"
+      android:layout_marginTop="43dp"
+      android:visibility="gone"
+      android:background="@drawable/signout" />
+
+  <Button
+      android:id="@+id/help_button"
+      android:layout_width="150dp"
+      android:layout_height="30dp"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      android:layout_marginLeft="14dp"
+      android:layout_marginTop="22dp"
+      android:background="@drawable/feedback_button"
+      android:onClick="help"
+      android:textColor="#000000" />
+
+</RelativeLayout>
+</ScrollView>

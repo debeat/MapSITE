@@ -1,0 +1,140 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+  android:background="@drawable/android_theme"
+    tools:context=".Collect_details" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="554dp"
+        android:orientation="vertical" >
+        
+        <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:text="Info."
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+        <EditText
+                android:id="@+id/details1"
+                android:focusable="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1"
+                android:layout_marginTop="14dp"
+                android:ems="10"
+                android:hint="Business Name"
+                android:inputType="text" 
+                android:textColorHint="@android:color/black"
+                android:textColor="@android:color/black"
+                android:background="@layout/textlines"
+                />
+        
+         <EditText
+               android:id="@+id/details2"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+              android:layout_weight="1.5"
+               android:layout_alignParentLeft="true"
+               android:layout_below="@+id/details1"
+               android:layout_marginTop="20dp"
+               android:ems="10"
+               android:hint="@string/hint2"
+               android:inputType="number" 
+               android:textColorHint="@android:color/black"
+               android:textColor="@android:color/black"
+               android:background="@layout/textlines">
+
+               <requestFocus />
+           </EditText>
+
+        <EditText
+            android:id="@+id/details3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/details5"
+            android:layout_marginTop="28dp"
+            android:layout_weight="1.5"
+            android:ems="10"
+            android:hint="@string/hint3"
+            android:inputType="text" 
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:background="@layout/textlines"/>
+
+        <EditText
+            android:id="@+id/details4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/details3"
+            android:layout_marginTop="26dp"
+            android:layout_weight="1.5"
+            android:ems="10"
+            android:hint="@string/hint4"
+            android:inputType="text"
+            android:textColorHint="@android:color/black" 
+            android:textColor="@android:color/black"
+            android:background="@layout/textlines"/>
+
+        <EditText
+            android:id="@+id/details5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/details2"
+            android:layout_marginTop="18dp"
+            android:layout_weight="1.5"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="text" 
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:background="@layout/textlines"/>
+
+         <Button
+             android:id="@+id/speak1"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_below="@+id/details4"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="22dp"
+             android:layout_weight="1"
+             android:background="@drawable/speak"
+             android:onClick="Speak" />
+
+         <Button
+             android:id="@+id/cam_button"
+             android:layout_width="70dp"
+             android:layout_height="70dp"
+             android:layout_below="@+id/speak1"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="14dp"
+             android:layout_weight="1"
+             android:background="@drawable/camera"
+             android:onClick="OnClick"
+             android:textColor="#000000" />
+
+         <Button
+             android:id="@+id/submit_button"
+             android:layout_width="160dp"
+             android:layout_height="70dp"
+             android:layout_below="@+id/cam_button"
+             android:layout_centerHorizontal="true"
+             android:layout_weight="1"
+             android:background="@drawable/submit"
+             android:onClick="submit"
+             android:textColor="#000000" />
+        
+        </RelativeLayout>
+    </ScrollView>
+    
